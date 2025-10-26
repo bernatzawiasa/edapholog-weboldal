@@ -1,173 +1,178 @@
-<!doctype html>
-<html lang="hu">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Edapholog® – Talajbiodiverzitás mérés egyszerűen</title>
-  <meta name="description" content="Edapholog®: AI-alapú, automatizált talajbiodiverzitás-mérés. Gyors, megfizethető, terepen és laborban is használható." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg: #0b0c10;
-      --card: #111218;
-      --muted: #9aa3af;
-      --text: #e5e7eb;
-      --accent: #7dd3fc; /* sky-300 */
-      --accent-2: #22d3ee; /* cyan-400 */
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;}
-    a{color:var(--accent-2);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:32px}
+<!DOCTYPE HTML>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>EDAPHOLOG – AI-powered soil biodiversity monitoring</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
 
-    /* Hero */
-    .hero{position:relative;overflow:hidden;border-radius:20px;padding:72px 28px;background:
-      radial-gradient(1200px 500px at 10% -10%, rgba(34,211,238,0.15), transparent 60%),
-      radial-gradient(900px 400px at 90% 0%, rgba(125,211,252,0.12), transparent 60%),
-      linear-gradient(180deg, #0e1017 0%, #0b0c10 100%);
-      box-shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
-    .hero h1{font-size: clamp(28px, 6vw, 56px);margin:14px 0 10px;letter-spacing:-.02em}
-    .hero p{color:#cbd5e1;max-width:850px;font-size: clamp(14px, 2.3vw, 18px);line-height:1.6}
-    .cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:12px 16px;border:1px solid rgba(255,255,255,.12);background:#151724;color:#fff;font-weight:600}
-    .btn:hover{background:#1c2030}
-
-    /* Sections */
-    section{margin-top:64px}
-    h2{font-size: clamp(22px, 3.5vw, 32px);margin:0 0 8px}
-    .lead{color:#cbd5e1;margin:0 0 24px}
-    .grid{display:grid;gap:16px}
-    .grid.cols-2{grid-template-columns:repeat(1,1fr)}
-    .grid.cols-3{grid-template-columns:repeat(1,1fr)}
-    @media (min-width: 820px){
-      .grid.cols-2{grid-template-columns:repeat(2,1fr)}
-      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    }
-
-    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
-    .card .body{padding:18px}
-    .muted{color:var(--muted)}
-    .kicker{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
-
-    /* Media */
-    .media{width:100%;display:block;object-fit:cover;background:#0f1117}
-    .media.ratio{position:relative;padding-top:56.25%}
-    .media.ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
-
-    /* Footer */
-    footer{margin-top:72px;border-top:1px solid rgba(255,255,255,.08);padding:24px 0;color:var(--muted);font-size:14px}
-    .contact{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .pill{border:1px solid rgba(255,255,255,.12);padding:8px 12px;border-radius:999px}
-
-    .logo{font-weight:800;letter-spacing:.02em}
-    .tm{opacity:.6;font-weight:600}
-  </style>
-</head>
-<body>
-  <header class="wrap">
-    <div class="hero">
-      <span class="badge"><span>🌱</span><span>AI-alapú talajbiodiverzitás-mérés</span></span>
-      <h1><span class="logo">Edapholog</span><span class="tm">®</span> — gyors, megfizethető, tanúsítható mérések</h1>
-      <p>
-        A talaj biodiverzitása gyorsan reagál a talajállapot változásaira, ezért kiváló korai bioindikátora a humuszfejlődésnek
-        és a talajegészség trendjeinek. Az Edapholog® mesterséges intelligenciát használva, automatizált módon méri a
-        talaj mezofauna biodiverzitását — kutatási és gazdálkodói gyakorlatban egyaránt.
-      </p>
-      <div class="cta">
-        <a class="btn" href="edapholog.zip" download>⬇︎ Teljes csomag letöltése</a>
-        <a class="btn" href="#video">▶︎ Rövid bemutató videó</a>
-        <a class="btn" href="#contact">✉︎ Kapcsolat</a>
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <a href="index.html">EDAPHOLOG <span>AI-powered soil biodiversity monitoring</span></a>
       </div>
-    </div>
-  </header>
+      <a href="#menu"><span>Menu</span></a>
+    </header>
 
-  <main class="wrap">
-    <section id="about" class="grid cols-2">
-      <div class="card">
-        <img class="media" src="assets/images/illusztracio.png" alt="Edapholog – illusztráció a talajbiodiverzitás méréséről" />
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generic.html">Generic</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <!--
+      Note: To show a background image, set the "data-bg" attribute below
+      to the full filename of your image. This is used in each section to set
+      the background image.
+    -->
+    <section id="banner" class="bg-img" data-bg="watermarked_preview1.gif">
+      <div class="inner">
+        <header>
+          <h1>EDAPHOLOG<sup>®</sup></h1>
+          <h2>AI-powered soil biodiversity monitoring</h2>
+        </header>
       </div>
-      <div class="card">
-        <div class="body">
-          <div class="kicker">Miért fontos?</div>
-          <h2>A talaj szervesanyag-tartalma és a biodiverzitás</h2>
-          <p class="muted">
-            A szervesanyag javítja a talajszerkezetet, a vízgazdálkodást és a puffer-kapacitást; a humusz pedig jelentős
-            szénnyelő a klímaváltozás elleni küzdelemben. A humifikációhoz teljes talajökoszisztéma szükséges — minél
-            nagyobb a fajgazdagság, annál jobb a humuszfejlődés és a talajegészség.
-          </p>
-        </div>
-      </div>
+      <a href="#one" class="more">Learn More</a>
     </section>
 
-    <section id="features" class="grid cols-3">
-      <div class="card">
-        <img class="media" src="assets/images/ai-feldolgozas.png" alt="AI-alapú képfeldolgozás – vizualizáció" />
-        <div class="body">
-          <h3>AI-alapú automatizálás</h3>
-          <p class="muted">Mesterséges intelligencia vezérelt képfeldolgozás az első, teljesen automata talajbiodiverzitás-méréshez.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="media" src="assets/images/mintavetel.png" alt="Standardizált mintavétel" />
-        <div class="body">
-          <h3>Standardizált mintavételezés</h3>
-          <p class="muted">Térben és időben reprodukálható protokoll, fejlett biostatisztikai kiértékeléssel.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="media" src="assets/images/karbon-program.png" alt="Karbon programok támogatása" />
-        <div class="body">
-          <h3>Karbon programok támogatása</h3>
-          <p class="muted">A beavatkozások elején és végén mért biodiverzitás adatokkal a pozitív hatás tanúsítható.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="video">
-      <h2>Bemutató videó</h2>
-      <p class="lead">Rövid áttekintés az Edapholog® működéséről és alkalmazásáról.</p>
-      <div class="media ratio">
-        <iframe src="https://www.youtube.com/embed/4W45qtB0EAU" title="Edapholog bemutató videó" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <section id="copy" class="grid cols-2">
-      <div class="card">
-        <div class="body">
-          <div class="kicker">Edapholog®</div>
-          <h2>Egyedi megoldás a talajélet mérésére</h2>
-          <p class="muted">A hazai fejlesztésű Edapholog® új szintre emeli a talajbiodiverzitás mérését: gyors, megfizethető és automatizált, terepen és laborban is.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="media" src="assets/images/edapholog-eszkoz.png" alt="Edapholog eszköz / minta – illusztráció" />
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="card">
-        <div class="body">
-          <h2>Kapcsolat</h2>
-          <p class="lead">Kérdése van? Írjon nekünk bizalommal.</p>
-          <div class="contact">
-            <span class="pill">✉︎ <a href="mailto:info@edapholog.com">info@edapholog.com</a></span>
+    <!-- One -->
+    <section id="one" class="wrapper post bg-img" data-bg="banner.jpg">
+      <div class="inner">
+        <article class="box">
+          <header>
+            <h2>Why soil biodiversity matters</h2>
+          </header>
+          <div class="content">
+            <p>
+              Soil organisms respond rapidly to changes in land use and management, making biodiversity a reliable
+              early indicator of soil health and humus dynamics. High species richness supports better soil structure,
+              water retention and nutrient cycling — key factors for long-term fertility and climate resilience.
+              Edapholog® focuses on quantifying these signals to inform research and practice.
+            </p>
           </div>
-        </div>
+          <footer>
+            <a href="generic.html" class="button alt">Learn More</a>
+          </footer>
+        </article>
+      </div>
+      <a href="#two" class="more">Learn More</a>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
+      <div class="inner">
+        <article class="box">
+          <header>
+            <h2>Standardised protocol & objective evaluation</h2>
+          </header>
+          <div class="content">
+            <p>
+              Edapholog® applies a standardised, reproducible sampling protocol. AI-based image analysis ensures
+              consistent, objective identification and counting, while biostatistical methods enable robust comparisons
+              across sites and over time. The outcome is decision-grade data for monitoring programmes and trials.
+            </p>
+          </div>
+          <footer>
+            <a href="generic.html" class="button alt">Learn More</a>
+          </footer>
+        </article>
+      </div>
+      <a href="#three" class="more">Learn More</a>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
+      <div class="inner">
+        <article class="box">
+          <header>
+            <h2>Carbon programmes — measurable impact</h2>
+          </header>
+          <div class="content">
+            <p>
+              Biodiversity measured before and after interventions helps verify ecological benefits within carbon and
+              regenerative farming programmes. Edapholog® supports MRV (Monitoring, Reporting, Verification) by delivering
+              auditable indicators that capture changes in soil-life communities and link them to management outcomes.
+            </p>
+          </div>
+          <footer>
+            <a href="generic.html" class="button alt">Learn More</a>
+          </footer>
+        </article>
+      </div>
+      <a href="#four" class="more">Learn More</a>
+    </section>
+
+    <!-- Four -->
+    <section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
+      <div class="inner">
+        <article class="box">
+          <header>
+            <h2>Hardware + AI + field-ready workflow</h2>
+          </header>
+          <div class="content">
+            <p>
+              The Edapholog® device combines optical precision with automated computer vision to accelerate processing and
+              reduce human error. Compact and portable, it is suitable for both laboratory and field conditions, providing
+              fast, reproducible biodiversity data to support evidence-based soil management.
+            </p>
+          </div>
+          <footer>
+            <a href="generic.html" class="button alt">Learn More</a>
+          </footer>
+        </article>
       </div>
     </section>
-  </main>
 
-  <footer class="wrap">
-    <div>© <span id="y"></span> Edapholog®. Minden jog fenntartva.</div>
-  </footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <h2>Contact</h2>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
+        <form action="#" method="post">
+          <div class="field half first">
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" placeholder="Name">
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" placeholder="info@edapholog.com">
+          </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+        </div>
+          <ul class="actions">
+            <li><input value="Send Message" class="button alt" type="submit"></li>
+          </ul>
+        </form>
+
+        <ul class="icons">
+          
+        </ul>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      © 2025 Edaphone Ltd. All rights reserved.
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
